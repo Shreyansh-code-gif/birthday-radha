@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Radha!</title>
+    <style>
+        body {
+            background: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .balloons {
+            margin-top: 20px;
+        }
+        .balloon {
+            display: inline-block;
+            width: 50px;
+            height: 70px;
+            background: radial-gradient(circle at 30% 30%, #ff7f7f, #ff3f3f);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            margin: 0 10px;
+            position: relative;
+        }
+        .balloon::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background: #555;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday Radha! 🎉</h1>
+    <p>Wishing you a day filled with love, joy, and smiles! 💖</p>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+</body>
+</html>
